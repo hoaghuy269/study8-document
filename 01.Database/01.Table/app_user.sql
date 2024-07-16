@@ -6,14 +6,14 @@
  */
 CREATE TABLE app_user (
     id BIGSERIAL PRIMARY KEY,
-    code VARCHAR(20) NOT NULL,
+    code VARCHAR(255) NOT NULL,
     username VARCHAR(30) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE,
-    phone_number VARCHAR(11) UNIQUE,
+    email VARCHAR(255),
+    phone_number VARCHAR(11),
     active SMALLINT,
     created_date TIMESTAMP NOT NULL,
-    created_id BIGINT NOT NULL,
+    created_id BIGINT,
     deleted SMALLINT,
     deleted_date TIMESTAMP,
     deleted_id BIGINT
