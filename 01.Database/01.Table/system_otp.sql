@@ -7,7 +7,8 @@
 CREATE TABLE system_otp (
     id BIGSERIAL PRIMARY KEY,
     user_id BIGINT NOT NULL,
-    otp_type SMALLINT,
+    otp_type VARCHAR(3),
+    otp_type_name VARCHAR(30),
     otp_code VARCHAR(50),
     active BOOLEAN,
     sent_date TIMESTAMP NOT NULL,
