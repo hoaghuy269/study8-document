@@ -10,7 +10,7 @@ CREATE TABLE system_otp (
     otp_type SMALLINT,
     otp_code VARCHAR(50),
     active BOOLEAN,
-    sent_date TIMESTAMP NOT NULL,
+    sent_date TIMESTAMP,
     expiry_date TIMESTAMP NOT NULL,
     created_date TIMESTAMP NOT NULL,
     created_id BIGINT,
