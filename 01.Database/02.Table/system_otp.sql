@@ -12,6 +12,7 @@ CREATE TABLE system_otp (
     active BOOLEAN,
     sent_date TIMESTAMP,
     expiry_date TIMESTAMP NOT NULL,
+    verified BOOLEAN,
     verification_date TIMESTAMP,
     created_date TIMESTAMP NOT NULL,
     created_id BIGINT,
