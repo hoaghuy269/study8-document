@@ -11,6 +11,8 @@ CREATE TABLE system_config (
     value VARCHAR(255),
     created_date TIMESTAMP NOT NULL,
     created_id BIGINT NOT NULL,
+    updated_date TIMESTAMP,
+    updated_id BIGINT,
     deleted INTEGER,
     deleted_date TIMESTAMP,
     deleted_id BIGINT

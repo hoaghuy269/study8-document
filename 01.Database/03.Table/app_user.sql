@@ -16,6 +16,8 @@ CREATE TABLE app_user (
     active SMALLINT,
     created_date TIMESTAMP NOT NULL,
     created_id BIGINT,
+    updated_date TIMESTAMP,
+    updated_id BIGINT,
     deleted SMALLINT,
     deleted_date TIMESTAMP,
     deleted_id BIGINT
