@@ -4,6 +4,7 @@
  * @Author: HuyNH
  * @Desc: Thông tin người dùng
  */
+DROP TABLE app_user;
 CREATE TABLE app_user (
     id BIGSERIAL PRIMARY KEY,
     code VARCHAR(255) NOT NULL,
@@ -14,6 +15,7 @@ CREATE TABLE app_user (
     phone_number VARCHAR(11),
     phone_number_verified BOOLEAN,
     active SMALLINT,
+    reset_password VARCHAR(255),
     created_date TIMESTAMP NOT NULL,
     created_id BIGINT,
     updated_date TIMESTAMP,
